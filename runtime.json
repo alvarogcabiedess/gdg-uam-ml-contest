@@ -1,0 +1,8 @@
+{
+  "hybrid": true,
+  "scratch": true,
+  "channels": 48,
+  "source_onnx_sha256": "b63d19345d154c78d2891d2159e4e6927fb43adbb5b91fe71353f66cc9ec6adc",
+  "source": "our frozen delivery; weights unchanged; no competitor source used",
+  "status": "Validated CPU Colab candidate; three full paired runs and label-blind parity passed"
+}

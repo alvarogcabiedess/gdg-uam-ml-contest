@@ -1,0 +1,12 @@
+{
+  "rows": 202,
+  "prediction_differences": 0,
+  "setup_s": 7.194637299980968,
+  "readonly_input_preserved": true,
+  "cpu_threads": 1,
+  "archive_sha256": "a08b025fdfd90ae6794c93e49f928eadc224433f0ebc1e9fadb3f5b8e8dd6d99",
+  "labels_used": false,
+  "fresh_process": true,
+  "cold_cache": true,
+  "all_manifest_hashes_passed": true
+}

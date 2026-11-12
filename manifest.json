@@ -1,0 +1,370 @@
+{
+  "model_tag": "stride12_distill_s1_conv2d_hybrid_v4",
+  "files_sha256": {
+    "model.py": "ba13989bd7dbf59c6823c6cea38e6dce9a464fd7c43961bc90d9798679475da0",
+    "model.onnx": "401cae81e546d4cda889655859af16eca9db3f13c99f2cd544c34c7eb3a1b57d",
+    "preprocessing.py": "8c81fb48f43cb35e482f0537d9543a8e574e44257362111291417e3d836a5b8e",
+    "fused_head.py": "988e2221471dac1357fce0f4ff33e53055991e8e5115ce30bf615c9ac84916b8",
+    "head.npz": "8439b7395dbb287dc437c5d7bd5589d401d65f426bf928279c6d3651bf117b38",
+    "runtime.json": "c045d5172311220a32339dd7112ca2c7dc3e15f0cad30311effefdef0750d07e",
+    "requirements.txt": "b45158acdea77d6492e7a5208ec1dc899c11344968a086d4edec841e7ea72c84"
+  },
+  "source_model_metrics": {
+    "tag": "stride12_distill_s1_conv2d",
+    "best_epoch": 100,
+    "parameters": 43128,
+    "val": {
+      "n": 20000,
+      "accuracy": 0.91305,
+      "balanced_accuracy": 0.9112280402682266,
+      "recall": [
+        0.7896217567989997,
+        0.9992869875222816,
+        0.9892357373519914,
+        0.9047419219471254,
+        0.9774624373956594,
+        0.975328947368421,
+        0.7955555555555556,
+        0.858590978205778
+      ],
+      "confusion": [
+        [
+          2526,
+          2,
+          183,
+          198,
+          30,
+          33,
+          54,
+          173,
+          0,
+          0
+        ],
+        [
+          1,
+          2803,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          9,
+          0,
+          2757,
+          3,
+          2,
+          3,
+          3,
+          10,
+          0,
+          0
+        ],
+        [
+          125,
+          0,
+          21,
+          2156,
+          5,
+          0,
+          13,
+          63,
+          0,
+          0
+        ],
+        [
+          8,
+          1,
+          1,
+          0,
+          2342,
+          39,
+          1,
+          4,
+          0,
+          0
+        ],
+        [
+          19,
+          0,
+          2,
+          0,
+          34,
+          2372,
+          3,
+          2,
+          0,
+          0
+        ],
+        [
+          32,
+          0,
+          13,
+          13,
+          0,
+          3,
+          1611,
+          353,
+          0,
+          0
+        ],
+        [
+          68,
+          0,
+          25,
+          22,
+          2,
+          4,
+          158,
+          1694,
+          0,
+          0
+        ]
+      ],
+      "finite_sample_score": 35.81301503353909,
+      "quality_per_class": [
+        0.44904460397384416,
+        0.9976275286627551,
+        0.9645774283644322,
+        0.7148521839881877,
+        0.9267937577204534,
+        0.9200531217199943,
+        0.4608137499039781,
+        0.5985343654400053
+      ]
+    },
+    "demo_dev": {
+      "n": 200,
+      "accuracy": 0.865,
+      "balanced_accuracy": 0.865,
+      "recall": [
+        0.76,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        0.64,
+        0.72
+      ],
+      "confusion": [
+        [
+          19,
+          0,
+          2,
+          3,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          20,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          25,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0,
+          4,
+          18,
+          0,
+          0
+        ]
+      ],
+      "finite_sample_score": 2.9006770935855575,
+      "quality_per_class": [
+        0.39323008,
+        1.0,
+        1.0,
+        0.4697600000000002,
+        1.0,
+        1.0,
+        0.21348352,
+        0.32534783999999994
+      ]
+    },
+    "cpu_forward_mean_s": 0.0005482478066369367,
+    "torchscript_forward_mean_s": 0.00033959695010101615,
+    "total_s": 413.27565863699965,
+    "selection": "fixed_tail_swa",
+    "swa_checkpoints": 26,
+    "training_samples": 80000,
+    "validation_is_held_out": true,
+    "swa_bn": "augmented",
+    "teachers": [
+      "dual12_colored_s1"
+    ],
+    "teacher_view": "augmented",
+    "parent_tag": "stride12_distill_s1",
+    "export_representation": "Equivalent singleton-height Conv2D",
+    "conversion_check": {
+      "tag": "stride12_distill_s1",
+      "representation": "Equivalent singleton-height Conv2D",
+      "random_tensor_pytorch_max_logit_error": 0.0,
+      "checks": [
+        {
+          "partition": "val",
+          "rows": 500,
+          "prediction_differences": 0,
+          "maximum_logit_error": 3.337860107421875e-06
+        },
+        {
+          "partition": "demo_dev",
+          "rows": 200,
+          "prediction_differences": 0,
+          "maximum_logit_error": 4.291534423828125e-06
+        }
+      ],
+      "source": "/content/drive/MyDrive/GDG/experiments/stride12_distill_s1/model.onnx",
+      "output": "/content/drive/MyDrive/GDG/experiments/stride12_distill_s1_conv2d/model.onnx",
+      "hardware_specific_graph_serialized": false,
+      "weights_retrained": false
+    }
+  },
+  "learned_parameters_changed": false,
+  "source_learned_model_sha256": "b63d19345d154c78d2891d2159e4e6927fb43adbb5b91fe71353f66cc9ec6adc",
+  "previous_delivery_zip_sha256": "3b46cdfd94a4fc12876d882678553fe1225432392d6c1fd158412c76f8f0d858",
+  "runtime": "CPUExecutionProvider + Numba fused head; one thread; public IOBinding",
+  "parity": {
+    "passed": true,
+    "labels_used": false,
+    "reserved_demo_used": false,
+    "training_inputs": 100000,
+    "synthetic_inputs": 10000,
+    "demo_development_inputs": 200,
+    "setup_s": {
+      "baseline": 4.324633551999796,
+      "trimmed_scratch": 4.033534449999934,
+      "hybrid_scratch": 3.9004294730002584
+    },
+    "seconds": 53.82466093599987,
+    "input_immutable": true,
+    "history_independence": true,
+    "variants": {
+      "trimmed_scratch": {
+        "rows": 110200,
+        "prediction_differences": 0,
+        "preprocessing_differences": 0,
+        "max_logit_error": 0.0,
+        "max_relative_logit_error": 0.0
+      },
+      "hybrid_scratch": {
+        "rows": 110200,
+        "prediction_differences": 0,
+        "preprocessing_differences": 0,
+        "max_logit_error": 4.76837158203125e-06,
+        "max_relative_logit_error": 2.6909090138360625e-06
+      }
+    },
+    "limitation": "Empirical decision equality on checked inputs; hybrid float32 reductions are not universally bitwise identical to ORT."
+  },
+  "paired_runtime_comparison": {
+    "paired_score_gains_percent": [
+      6.552503438479329,
+      6.233087981604002,
+      9.234532994351818
+    ],
+    "mean_score_gain_percent": 7.340041471478383,
+    "paired_latency_reductions_percent": [
+      11.982243136724712,
+      11.429853931386468,
+      15.820611365211047
+    ],
+    "mean_latency_reduction_percent": 13.077569477774077
+  },
+  "colab_scores": [
+    139.9974072336214,
+    135.97139584587782,
+    137.2003358469502
+  ],
+  "colab_latency_s": [
+    0.00012883340521174878,
+    0.00013706676865825077,
+    0.00013375746088819436
+  ],
+  "benchmark_source_result_sha256": "1f102f7900fd09d1ddd5ea3d23f941a0c06a7ec4a462d6f9fa3eddfe193db442",
+  "source_bundle_sha256": "c58fb3be5af4b17d24237ade6c40680721b77cef12f63860eaa042b1943345ab",
+  "source_bundle_corrections": "virtualenv provisioning fallback and final print boolean; see benchmark runtime_corrections.json",
+  "unique_development_examples_replayed": 200,
+  "hidden_test_score": false,
+  "benchmark_config_sha256": "3004a17ccfa8d2bee5838cb133c9540b653c806538f02036b4467234dc3e4cd0",
+  "delivery_config_change": "Only the descriptive status string changed after validation; computational settings unchanged"
+}

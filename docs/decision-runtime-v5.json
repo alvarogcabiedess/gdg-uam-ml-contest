@@ -1,0 +1,68 @@
+{
+  "evidence_validated": true,
+  "eligible": [],
+  "winner_by_mean_score": "baseline_v4",
+  "summary": {
+    "baseline_v4": {
+      "mean_score": 104.5227518391464,
+      "mean_latency_us": 232.5952532681104,
+      "scores": [
+        103.99398236855359,
+        107.07038335710874,
+        102.50388979177683
+      ],
+      "latency_us": [
+        236.29646299198956,
+        222.44400190560933,
+        239.04529490673235
+      ],
+      "max_setup_s": 9.69036529
+    },
+    "head_vectorized": {
+      "mean_score": 107.16947891005576,
+      "mean_latency_us": 221.01846778381625,
+      "scores": [
+        109.57428529953322,
+        104.32812650896238,
+        107.60602492167168
+      ],
+      "latency_us": [
+        211.87114395635442,
+        234.07486305773483,
+        217.10939633735953
+      ],
+      "max_setup_s": 10.90813343,
+      "paired_score_gains_percent": [
+        5.365986381022592,
+        -2.5611721581309643,
+        4.977503917421244
+      ],
+      "gate": false,
+      "latency_reduction_percent": 4.977223447870493
+    },
+    "combined": {
+      "mean_score": 108.62618879315274,
+      "mean_latency_us": 214.92419297850137,
+      "scores": [
+        109.92876103696106,
+        106.97377421179863,
+        108.97603113069852
+      ],
+      "latency_us": [
+        210.46369801532182,
+        222.78096175952948,
+        211.5279191606528
+      ],
+      "max_setup_s": 9.857832129,
+      "paired_score_gains_percent": [
+        5.706848159131628,
+        -0.09022956888824485,
+        6.314044620227577
+      ],
+      "gate": false,
+      "latency_reduction_percent": 7.5973434716828825
+    }
+  },
+  "data_limit": "200 reused demo development inputs replayed for timing. No hidden-test estimate or competitor rank.",
+  "delivery_changed": false
+}

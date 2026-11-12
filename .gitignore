@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.venv*/
+.env
+.env.*
+data/
+results/
+*.log
+*.zip
+*.npz
+!/head.npz
+.ipynb_checkpoints/
