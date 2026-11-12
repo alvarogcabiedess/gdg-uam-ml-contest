@@ -1,0 +1,63 @@
+{
+  "evidence_validated": true,
+  "study": "C:\\CodeHome\\proyectos\\GDG\\gdg-lab\\reports\\runtime_express\\local_full",
+  "colab": false,
+  "selected_experiment": "combined",
+  "promotion_gate": false,
+  "recommended": "baseline_v4",
+  "paired_score_gains_percent": [
+    11.092347887316855,
+    -8.618899081213128,
+    19.474644688403963
+  ],
+  "mean_paired_score_gain_percent": 7.316031164835896,
+  "paired_latency_reduction_percent": [
+    18.826404046592017,
+    -19.544148909332737,
+    29.88897675985489
+  ],
+  "mean_paired_latency_reduction_percent": 9.723743965704724,
+  "source_hashes": {
+    "baseline_v4": {
+      "model.py": "ba13989bd7dbf59c6823c6cea38e6dce9a464fd7c43961bc90d9798679475da0",
+      "preprocessing.py": "8c81fb48f43cb35e482f0537d9543a8e574e44257362111291417e3d836a5b8e",
+      "fused_head.py": "988e2221471dac1357fce0f4ff33e53055991e8e5115ce30bf615c9ac84916b8",
+      "model.onnx": "401cae81e546d4cda889655859af16eca9db3f13c99f2cd544c34c7eb3a1b57d",
+      "head.npz": "8439b7395dbb287dc437c5d7bd5589d401d65f426bf928279c6d3651bf117b38",
+      "requirements.txt": "b45158acdea77d6492e7a5208ec1dc899c11344968a086d4edec841e7ea72c84"
+    },
+    "combined": {
+      "model.py": "4f6b67366703a53216e00b8128212c1c3d9953ebf321fa1836b75a49f203fa77",
+      "preprocessing.py": "8c81fb48f43cb35e482f0537d9543a8e574e44257362111291417e3d836a5b8e",
+      "fused_head.py": "78ef1512c88c0830723f914448485057e100907cda2d8a95e1ae196fde258943",
+      "model.onnx": "29487b58d117c14d36c59f55a9334e225623b7feef22b1d65798feaa28325279",
+      "head.npz": "8439b7395dbb287dc437c5d7bd5589d401d65f426bf928279c6d3651bf117b38",
+      "shortcut.npz": "5085f9ca2d236eb797d7efd7807a06c50ec75945ee599b0ea25e2ec6ce096e23",
+      "requirements.txt": "b45158acdea77d6492e7a5208ec1dc899c11344968a086d4edec841e7ea72c84"
+    }
+  },
+  "result_sha256": "49dbc1bcf90061d47d090313704b30e982fb61fcf2b6f3b09af4ee1b1b9bc0de",
+  "verification_sha256": "7e6f85f38f1cafc58c3ac2eb042538ce28cb9aa0ed8d23ca7ad5e04b78f034e5",
+  "verified_inputs": 110230,
+  "max_logit_error": 5.662441253662109e-06,
+  "max_setup_s": 11.2101551,
+  "summary": {
+    "baseline_v4": {
+      "scores": [
+        152.4379130713076,
+        151.35569001766964,
+        127.741748988744
+      ],
+      "mean_latency_us": 124.55632923558126
+    },
+    "combined": {
+      "scores": [
+        169.3468567013427,
+        138.31049584137293,
+        152.61900072305477
+      ],
+      "mean_latency_us": 109.48002409090337
+    }
+  },
+  "limitations": "Timing on replayed 200 development inputs; not independent hidden-test accuracy or ranking. No weights retrained. All predeclared pairs retained."
+}

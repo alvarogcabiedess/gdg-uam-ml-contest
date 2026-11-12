@@ -53,3 +53,16 @@ de consistencia; este repositorio conserva v4.
 
 El repositorio está en preparación. Todavía no se ha enviado a los organizadores
 ni se les ha concedido acceso.
+
+## Revisión final del 12 de noviembre
+
+La entrega definitiva conserva **v4**, con los mismos archivos y hashes.
+Se probaron cuatro variantes de ejecución; las tres candidatas principales
+mantuvieron las clases en 110.230 entradas, tanto localmente como en Colab.
+La candidata seleccionada para la comparación oficial no cumplió el criterio
+previo de ganar las tres parejas completas. No se han cambiado los pesos.
+
+La decisión, los resultados favorables y desfavorables y las limitaciones del
+plazo están en [el informe final](docs/express-final.md) y en los JSON de `docs/`.
+No se emplearon servicios de pago. El repositorio sigue privado y los jueces
+todavía no tienen acceso; la preparación del repositorio no envía la entrega.

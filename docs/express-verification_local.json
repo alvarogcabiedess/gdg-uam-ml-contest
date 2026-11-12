@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "baseline": "current v4",
+  "labels_used": false,
+  "sealed_demo_used": false,
+  "setup_s": {
+    "baseline_v4": 0.333003000007011,
+    "combined": 0.14909390000684652,
+    "v4_closed": 0.3191952999914065,
+    "v5_closed": 0.5079223000066122
+  },
+  "seconds": 32.88699810000253,
+  "variants": {
+    "combined": {
+      "rows": 110230,
+      "prediction_differences": 0,
+      "preprocessing_differences": 0,
+      "max_logit_error": 5.662441253662109e-06,
+      "max_relative_logit_error": 3.0892833819962107e-06
+    },
+    "v4_closed": {
+      "rows": 110230,
+      "prediction_differences": 0,
+      "preprocessing_differences": 0,
+      "max_logit_error": 0.0,
+      "max_relative_logit_error": 0.0
+    },
+    "v5_closed": {
+      "rows": 110230,
+      "prediction_differences": 0,
+      "preprocessing_differences": 0,
+      "max_logit_error": 5.662441253662109e-06,
+      "max_relative_logit_error": 3.0892833819962107e-06
+    }
+  },
+  "input_immutable": true,
+  "history_independent": true,
+  "noncontiguous_inputs_checked": 30,
+  "limitation": "Empirical decision equality; different float32 execution orders are not universally bitwise identical."
+}
