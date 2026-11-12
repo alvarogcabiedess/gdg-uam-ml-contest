@@ -1,7 +1,7 @@
 # GDG UAM ML Contest — entrega
 
-Repositorio privado de preparación de la entrega de Álvaro Gutiérrez de
-Cabiedes Gonzalvo. Versión seleccionada: **runtime v4**, CPU y un hilo.
+Entrega de Álvaro Gutiérrez de Cabiedes Gonzalvo.
+Versión definitiva: **runtime v4**, CPU y un hilo.
 
 El modelo y los pesos están preparados para evaluar: no hay que entrenar nada.
 `model.py` expone `Model` y `predict(sample) -> int`, con clases de 0 a 7.
@@ -51,8 +51,8 @@ de desarrollo: no son una estimación del test oculto ni de la posición final.
 La candidata v5 fue más rápida en promedio, pero no cumplió el criterio previo
 de consistencia; este repositorio conserva v4.
 
-El repositorio está en preparación. Todavía no se ha enviado a los organizadores
-ni se les ha concedido acceso.
+Este repositorio se publica para permitir que la organización lo clone y evalúe.
+La decisión final y sus evidencias están en `docs/express-final.md`.
 
 ## Revisión final del 12 de noviembre
 
@@ -64,5 +64,6 @@ previo de ganar las tres parejas completas. No se han cambiado los pesos.
 
 La decisión, los resultados favorables y desfavorables y las limitaciones del
 plazo están en [el informe final](docs/express-final.md) y en los JSON de `docs/`.
-No se emplearon servicios de pago. El repositorio sigue privado y los jueces
-todavía no tienen acceso; la preparación del repositorio no envía la entrega.
+No se emplearon servicios de pago. Los informes conservan el estado histórico
+del repositorio cuando se realizaron las pruebas; su publicación no modifica
+los archivos de inferencia ni la decisión de entregar v4.
